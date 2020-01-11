@@ -15,6 +15,11 @@
 		5653705A23C8F11B00466201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5653705823C8F11B00466201 /* LaunchScreen.storyboard */; };
 		5653706523C8F11B00466201 /* Coredata_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5653706423C8F11B00466201 /* Coredata_SampleTests.swift */; };
 		5653707023C8F11B00466201 /* Coredata_SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5653706F23C8F11B00466201 /* Coredata_SampleUITests.swift */; };
+		5653707E23C8F5EA00466201 /* AddDogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5653707D23C8F5EA00466201 /* AddDogListViewController.swift */; };
+		5653708023C905A100466201 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5653707F23C905A000466201 /* CustomTableViewCell.swift */; };
+		566F802F23C9297B004271F9 /* DogList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F802D23C9297B004271F9 /* DogList+CoreDataClass.swift */; };
+		566F803023C9297B004271F9 /* DogList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F802E23C9297B004271F9 /* DogList+CoreDataProperties.swift */; };
+		56BFB45423C923BD00BE7430 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BFB45323C923BD00BE7430 /* DBManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		5653706B23C8F11B00466201 /* Coredata SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coredata SampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5653706F23C8F11B00466201 /* Coredata_SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coredata_SampleUITests.swift; sourceTree = "<group>"; };
 		5653707123C8F11B00466201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5653707D23C8F5EA00466201 /* AddDogListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogListViewController.swift; sourceTree = "<group>"; };
+		5653707F23C905A000466201 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		566F802D23C9297B004271F9 /* DogList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DogList+CoreDataClass.swift"; path = "Coredata Sample/DogList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		566F802E23C9297B004271F9 /* DogList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DogList+CoreDataProperties.swift"; path = "Coredata Sample/DogList+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		56BFB45323C923BD00BE7430 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,8 @@
 		5653704023C8F11900466201 = {
 			isa = PBXGroup;
 			children = (
+				566F802D23C9297B004271F9 /* DogList+CoreDataClass.swift */,
+				566F802E23C9297B004271F9 /* DogList+CoreDataProperties.swift */,
 				5653704B23C8F11900466201 /* Coredata Sample */,
 				5653706323C8F11B00466201 /* Coredata SampleTests */,
 				5653706E23C8F11B00466201 /* Coredata SampleUITests */,
@@ -99,11 +111,11 @@
 		5653704B23C8F11900466201 /* Coredata Sample */ = {
 			isa = PBXGroup;
 			children = (
+				566F803323C92DAE004271F9 /* ViewModel */,
+				566F803223C92D6E004271F9 /* Views */,
+				566F803123C92D50004271F9 /* Helpers */,
 				5653704C23C8F11900466201 /* AppDelegate.swift */,
-				5653704E23C8F11900466201 /* ViewController.swift */,
-				5653705023C8F11900466201 /* Main.storyboard */,
 				5653705623C8F11A00466201 /* Assets.xcassets */,
-				5653705823C8F11B00466201 /* LaunchScreen.storyboard */,
 				5653705B23C8F11B00466201 /* Info.plist */,
 				5653705323C8F11900466201 /* Coredata_Sample.xcdatamodeld */,
 			);
@@ -126,6 +138,33 @@
 				5653707123C8F11B00466201 /* Info.plist */,
 			);
 			path = "Coredata SampleUITests";
+			sourceTree = "<group>";
+		};
+		566F803123C92D50004271F9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				56BFB45323C923BD00BE7430 /* DBManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		566F803223C92D6E004271F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5653705823C8F11B00466201 /* LaunchScreen.storyboard */,
+				5653705023C8F11900466201 /* Main.storyboard */,
+				5653707F23C905A000466201 /* CustomTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		566F803323C92DAE004271F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5653707D23C8F5EA00466201 /* AddDogListViewController.swift */,
+				5653704E23C8F11900466201 /* ViewController.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +298,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				566F803023C9297B004271F9 /* DogList+CoreDataProperties.swift in Sources */,
 				5653704F23C8F11900466201 /* ViewController.swift in Sources */,
+				566F802F23C9297B004271F9 /* DogList+CoreDataClass.swift in Sources */,
+				5653708023C905A100466201 /* CustomTableViewCell.swift in Sources */,
+				56BFB45423C923BD00BE7430 /* DBManager.swift in Sources */,
 				5653704D23C8F11900466201 /* AppDelegate.swift in Sources */,
 				5653705523C8F11900466201 /* Coredata_Sample.xcdatamodeld in Sources */,
+				5653707E23C8F5EA00466201 /* AddDogListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
