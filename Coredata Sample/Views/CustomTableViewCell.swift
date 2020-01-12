@@ -18,8 +18,10 @@ class CustomTableViewCell: UITableViewCell {
         didSet {
             lbldogName?.text = userObj.dogName
             lbldogDescription?.text = userObj.dogDescription
-            //cellImageView?.sd_setImage(with: URL(string: (userObj?.thumbImage)!), placeholderImage: nil)
+            if let displayImg = userObj.dogImage {
+            tblImageUrl?.image = UIImage(data: displayImg)
         }
     }
-
+}
+   
 }

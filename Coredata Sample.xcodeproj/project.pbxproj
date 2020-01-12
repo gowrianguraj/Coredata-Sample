@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5618872223CAD7DA00D3D61F /* SF-UI-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5618872123CAD7DA00D3D61F /* SF-UI-Display-Medium.otf */; };
 		5653704D23C8F11900466201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5653704C23C8F11900466201 /* AppDelegate.swift */; };
 		5653704F23C8F11900466201 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5653704E23C8F11900466201 /* ViewController.swift */; };
 		5653705223C8F11900466201 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5653705023C8F11900466201 /* Main.storyboard */; };
@@ -19,6 +20,8 @@
 		5653708023C905A100466201 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5653707F23C905A000466201 /* CustomTableViewCell.swift */; };
 		566F802F23C9297B004271F9 /* DogList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F802D23C9297B004271F9 /* DogList+CoreDataClass.swift */; };
 		566F803023C9297B004271F9 /* DogList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F802E23C9297B004271F9 /* DogList+CoreDataProperties.swift */; };
+		566F803623C96876004271F9 /* icn-add-photo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 566F803423C96876004271F9 /* icn-add-photo@3x.png */; };
+		566F803723C96876004271F9 /* icn-add-photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 566F803523C96876004271F9 /* icn-add-photo@2x.png */; };
 		56BFB45423C923BD00BE7430 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BFB45323C923BD00BE7430 /* DBManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5618872123CAD7DA00D3D61F /* SF-UI-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Medium.otf"; sourceTree = "<group>"; };
 		5653704923C8F11900466201 /* Coredata Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coredata Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5653704C23C8F11900466201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5653704E23C8F11900466201 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 		5653707F23C905A000466201 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		566F802D23C9297B004271F9 /* DogList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DogList+CoreDataClass.swift"; path = "Coredata Sample/DogList+CoreDataClass.swift"; sourceTree = "<group>"; };
 		566F802E23C9297B004271F9 /* DogList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DogList+CoreDataProperties.swift"; path = "Coredata Sample/DogList+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		566F803423C96876004271F9 /* icn-add-photo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn-add-photo@3x.png"; sourceTree = "<group>"; };
+		566F803523C96876004271F9 /* icn-add-photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn-add-photo@2x.png"; sourceTree = "<group>"; };
 		56BFB45323C923BD00BE7430 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5618871E23CA459B00D3D61F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				566F803523C96876004271F9 /* icn-add-photo@2x.png */,
+				566F803423C96876004271F9 /* icn-add-photo@3x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		5653704023C8F11900466201 = {
 			isa = PBXGroup;
 			children = (
@@ -113,9 +128,11 @@
 			children = (
 				566F803323C92DAE004271F9 /* ViewModel */,
 				566F803223C92D6E004271F9 /* Views */,
-				566F803123C92D50004271F9 /* Helpers */,
+				566F803123C92D50004271F9 /* CoreDataModel */,
 				5653704C23C8F11900466201 /* AppDelegate.swift */,
 				5653705623C8F11A00466201 /* Assets.xcassets */,
+				5618872123CAD7DA00D3D61F /* SF-UI-Display-Medium.otf */,
+				5618871E23CA459B00D3D61F /* Images */,
 				5653705B23C8F11B00466201 /* Info.plist */,
 				5653705323C8F11900466201 /* Coredata_Sample.xcdatamodeld */,
 			);
@@ -140,12 +157,12 @@
 			path = "Coredata SampleUITests";
 			sourceTree = "<group>";
 		};
-		566F803123C92D50004271F9 /* Helpers */ = {
+		566F803123C92D50004271F9 /* CoreDataModel */ = {
 			isa = PBXGroup;
 			children = (
 				56BFB45323C923BD00BE7430 /* DBManager.swift */,
 			);
-			path = Helpers;
+			path = CoreDataModel;
 			sourceTree = "<group>";
 		};
 		566F803223C92D6E004271F9 /* Views */ = {
@@ -271,8 +288,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5618872223CAD7DA00D3D61F /* SF-UI-Display-Medium.otf in Resources */,
 				5653705A23C8F11B00466201 /* LaunchScreen.storyboard in Resources */,
+				566F803623C96876004271F9 /* icn-add-photo@3x.png in Resources */,
 				5653705723C8F11A00466201 /* Assets.xcassets in Resources */,
+				566F803723C96876004271F9 /* icn-add-photo@2x.png in Resources */,
 				5653705223C8F11900466201 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

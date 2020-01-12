@@ -20,5 +20,6 @@ extension DogList {
     @NSManaged public var dogDescription: String?
     @NSManaged public var dogName: String?
     @NSManaged public var owner: String?
+    @NSManaged public var dogImage: Data?
 
 }
